@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Мир YouTube</title>
+    <link rel="stylesheet" href="./Мир YouTube_files/style.css">
+<style type="text/css"></style></head>
+<body>
+
+<header>
+    <h1>Мир YouTube</h1>
+    <p>Ютуберы и о чём они снимают</p>
+    <button id="themeBtn">Сменить фон</button>
+    <div class="filters">
+   <button onclick="filterYoutubers('all')">Все</button>
+   <button onclick="filterYoutubers('ru')">Русские</button>
+   <button onclick="filterYoutubers('us')">Американские</button>
+</div>
+
+
+
+
+</header>
+<div class="search">
+    <input type="text" id="searchInput" placeholder="Поиск блогера по имени..." onkeyup="searchYoutubers()">
+</div>
+
+<main class="container">
+
+
+
+
+
+<a href="https://www.youtube.com/@MrBeast">
+<div class="card" data-country="us">
+    <h2>MrBeast</h2>
+    <p><strong>Контент:</strong> Челленджи, эксперименты, благотворительность</p>
+    <p><strong>Биография:</strong> Один из самых популярных ютуберов в мире.</p>
+</div></a>
+
+
+
+
+
+
+<a href="https://www.youtube.com/@PewDiePie">
+<div class="card" data-country="us">
+    <h2>PewDiePie</h2>
+    <p><strong>Контент:</strong> Игры, реакции, юмор</p>
+    <p><strong>Биография:</strong> Шведский блогер, ставший мировой легендой YouTube.</p>
+</div></a>
+
+
+
+
+
+
+<a href="https://www.youtube.com/@markiplier">
+<div class="card" data-country="us">
+    <h2>Markiplier</h2>
+    <p><strong>Контент:</strong> Летсплеи, хорроры</p>
+    <p><strong>Биография:</strong> Популярный американский игровой ютубер.</p>
+</div></a>
+
+
+
+
+
+
+
+<a href="https://www.youtube.com/@jacksepticeye">
+<div class="card" data-country="us">
+    <h2>Jacksepticeye</h2>
+    <p><strong>Контент:</strong> Игры, юмор</p>
+    <p><strong>Биография:</strong> Ирландский ютубер с энергичными видео.</p>
+</div></a>
+
+
+
+
+
+
+<a href="https://www.youtube.com/@loganpaulvlogs">
+<div class="card" data-country="us">
+    <h2>Logan Paul</h2>
+    <p><strong>Контент:</strong> Влоги, шоу</p>
+    <p><strong>Биография:</strong> Блогер и медийная личность.</p>
+</div></a>
+
+
+
+
+
+
+
+<a href="https://www.youtube.com/@dream">
+<div class="card" data-country="us">
+    <h2>Dream</h2>
+    <p><strong>Контент:</strong> Minecraft</p>
+    <p><strong>Биография:</strong> Известен рекордами и челленджами в Minecraft.</p>
+</div></a>
+
+
+
+
+
+
+<a href="https://www.youtube.com/@A4a4a4a4">
+<div class="card" data-country="ru">
+    <h2>A4 (Влад Бумага)</h2>
+    <p><strong>Контент:</strong> Челленджи, развлечения</p>
+    <p><strong>Биография:</strong> Один из самых популярных блогеров СНГ.</p>
+</div></a>
+
+
+
+
+
+
+<a href="https://www.youtube.com/@kuplinovplay">
+<div class="card" data-country="ru">
+    <h2>Kuplinov</h2>
+    <p><strong>Контент:</strong> Прохождения игр</p>
+    <p><strong>Биография:</strong> Известный российский летсплейщик.</p>
+</div></a>
+
+
+
+
+
+
+<a href="https://www.youtube.com/@EeOneGuy">
+<div class="card" data-country="ru">
+    <h2>Ивангай</h2>
+    <p><strong>Контент:</strong> Юмор, скетчи</p>
+    <p><strong>Биография:</strong> Один из первых популярных блогеров Рунета.</p>
+</div></a>
+
+
+
+
+
+
+<a href="https://www.youtube.com/@JuliusSpeak">
+<div class="card" data-country="ru">
+    <h2>Юлик</h2>
+    <p><strong>Контент:</strong> Реакции, обзоры</p>
+    <p><strong>Биография:</strong> Юмористический блогер.</p>
+</div></a>
+
+
+
+
+
+
+<a href="https://www.youtube.com/@Wylsacom">
+<div class="card" data-country="ru">
+    <h2>Wylsacom</h2>
+    <p><strong>Контент:</strong> Техника, обзоры</p>
+    <p><strong>Биография:</strong> Самый известный техноблогер России.</p>
+</div></a>
+
+
+
+
+
+
+<a href="https://www.youtube.com/@FixPlayMinecraft">
+<div class="card" data-country="ru">
+    <h2>FixPlay</h2>
+    <p><strong>Контент:</strong> Minecraft</p>
+    <p><strong>Биография:</strong> Популярен среди подростков.</p>
+</div></a>
+
+
+
+
+
+
+<a href="https://www.youtube.com/@MrMarmok">
+<div class="card" data-country="ru">
+    <h2>Мармок</h2>
+    <p><strong>Контент:</strong> Игры, юмор</p>
+    <p><strong>Биография:</strong> Известен смешными игровыми видео.</p>
+</div></a>
+
+
+
+
+
+
+
+<a href="https://www.youtube.com/@Vsauce" target="_blank">
+<div class="card" data-country="us">
+    <h2>Vsauce</h2>
+    <p><strong>Контент:</strong> Наука, факты, философия</p>
+    <p><strong>Биография:</strong> Познавательный канал с необычными вопросами.</p>
+</div>
+</a>
+
+
+
+
+
+
+
+
+<a href="https://www.youtube.com/@Ninja" target="_blank">
+<div class="card" data-country="us">
+    <h2>Ninja</h2>
+    <p><strong>Контент:</strong> Игры, Fortnite</p>
+    <p><strong>Биография:</strong> Один из самых известных стримеров в мире.</p>
+</div>
+</a>
+
+
+
+
+
+
+
+
+<a href="https://www.youtube.com/@CaseyNeistat" target="_blank">
+<div class="card" data-country="us">
+    <h2>Casey Neistat</h2>
+    <p><strong>Контент:</strong> Влоги, путешествия</p>
+    <p><strong>Биография:</strong> Легендарный влогер и режиссёр.</p>
+</div>
+</a>
+
+
+
+
+
+
+
+<a href="https://www.youtube.com/@DimaMaslennikov" target="_blank">
+<div class="card" data-country="ru">
+    <h2>Дима Масленников</h2>
+    <p><strong>Контент:</strong> Эксперименты</p>
+    <p><strong>Биография:</strong> Популярен экстремальными и мистическими видео.</p>
+</div>
+</a>
+
+
+
+
+
+
+
+<a href="https://www.youtube.com/@ptuxerman" target="_blank">
+<div class="card" data-country="ru">
+    <h2>Антон Птушкин</h2>
+    <p><strong>Контент:</strong> Путешествия</p>
+    <p><strong>Биография:</strong> Один из лучших тревел-блогеров СНГ.</p>
+</div>
+</a>
+
+
+
+
+
+
+<a href="https://www.youtube.com/@katyaclub" target="_blank">
+<div class="card" data-country="ru">
+    <h2>Катя Клэп</h2>
+    <p><strong>Контент:</strong> Юмор, лайфстайл</p>
+    <p><strong>Биография:</strong> Одна из самых известных блогерш России.</p>
+</div>
+</a>
+
+
+
+
+
+<a href="https://www.youtube.com/@SSSniperWolf">
+<div class="card" data-country="us">
+    <h2>SSSniperWolf</h2>
+    <p><strong>Контент:</strong> Реакции</p>
+    <p><strong>Биография:</strong> Популярный реакционный блогер.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@Pokimane">
+<div class="card" data-country="us">
+    <h2>Pokimane</h2>
+    <p><strong>Контент:</strong> Стримы</p>
+    <p><strong>Биография:</strong> Одна из самых известных стримерш.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@CaseyNeistat">
+<div class="card" data-country="us">
+    <h2>Casey Neistat</h2>
+    <p><strong>Контент:</strong> Влоги</p>
+    <p><strong>Биография:</strong> Легендарный американский влогер.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@Mrwhosetheboss">
+<div class="card" data-country="us">
+    <h2>Mrwhosetheboss</h2>
+    <p><strong>Контент:</strong> Техника</p>
+    <p><strong>Биография:</strong> Обзоры смартфонов и гаджетов.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@UnboxTherapy">
+<div class="card" data-country="us">
+    <h2>Unbox Therapy</h2>
+    <p><strong>Контент:</strong> Гаджеты</p>
+    <p><strong>Биография:</strong> Распаковки и обзоры техники.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@MKBHD">
+<div class="card" data-country="us">
+    <h2>MKBHD</h2>
+    <p><strong>Контент:</strong> Технологии</p>
+    <p><strong>Биография:</strong> Один из лучших техноблогеров.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@SlivkiShow">
+<div class="card" data-country="ru">
+    <h2>SlivkiShow</h2>
+    <p><strong>Контент:</strong> Эксперименты</p>
+    <p><strong>Биография:</strong> Популярный научно-развлекательный канал.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@UtopiaShow">
+<div class="card" data-country="ru">
+    <h2>Utopia Show</h2>
+    <p><strong>Контент:</strong> Загадки</p>
+    <p><strong>Биография:</strong> Канал с тайнами и теориями.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@badcomedian">
+<div class="card" data-country="ru">
+    <h2>BadComedian</h2>
+    <p><strong>Контент:</strong> Кино</p>
+    <p><strong>Биография:</strong> Известен жёсткими обзорами фильмов.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@AcademeG">
+<div class="card" data-country="ru">
+    <h2>AcademeG</h2>
+    <p><strong>Контент:</strong> Авто</p>
+    <p><strong>Биография:</strong> Популярный автоблогер.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@toplesofficial">
+<div class="card" data-country="ru">
+    <h2>ТОПЛЕС</h2>
+    <p><strong>Контент:</strong> Наука</p>
+    <p><strong>Биография:</strong> Познавательные видео простым языком.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@ThisIsHorosho">
+<div class="card" data-country="ru">
+    <h2>This is Хорошо</h2>
+    <p><strong>Контент:</strong> Юмор</p>
+    <p><strong>Биография:</strong> Классический юмористический канал.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@RyanHiga">
+<div class="card" data-country="us">
+    <h2>Ryan Higa</h2>
+    <p><strong>Контент:</strong> Юмор</p>
+    <p><strong>Биография:</strong> Один из первых популярных ютуберов.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@Lilly">
+<div class="card" data-country="us">
+    <h2>Lilly Singh</h2>
+    <p><strong>Контент:</strong> Комедия</p>
+    <p><strong>Биография:</strong> Канадская комедийная блогерша.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@Zoella">
+<div class="card" data-country="us">
+    <h2>Zoella</h2>
+    <p><strong>Контент:</strong> Лайфстайл</p>
+    <p><strong>Биография:</strong> Британская блогерша.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@Shane">
+<div class="card" data-country="us">
+    <h2>Shane Dawson</h2>
+    <p><strong>Контент:</strong> Документальные видео</p>
+    <p><strong>Биография:</strong> Один из самых известных блогеров.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@DavidDobrik">
+<div class="card" data-country="us">
+    <h2>David Dobrik</h2>
+    <p><strong>Контент:</strong> Влоги</p>
+    <p><strong>Биография:</strong> Известен динамичными видео.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@JamesCharles">
+<div class="card" data-country="us">
+    <h2>James Charles</h2>
+    <p><strong>Контент:</strong> Бьюти</p>
+    <p><strong>Биография:</strong> Популярный визажист.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@JakePaul">
+<div class="card" data-country="us">
+    <h2>Jake Paul</h2>
+    <p><strong>Контент:</strong> Влоги</p>
+    <p><strong>Биография:</strong> Медийная личность.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@GamerNexus">
+<div class="card" data-country="us">
+    <h2>GamerNexus</h2>
+    <p><strong>Контент:</strong> Техника</p>
+    <p><strong>Биография:</strong> Глубокие обзоры железа.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@LinusTechTips">
+<div class="card" data-country="us">
+    <h2>Linus Tech Tips</h2>
+    <p><strong>Контент:</strong> Компьютеры</p>
+    <p><strong>Биография:</strong> Крупнейший техноканал.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@Kurzgesagt">
+<div class="card" data-country="us">
+    <h2>Kurzgesagt</h2>
+    <p><strong>Контент:</strong> Наука</p>
+    <p><strong>Биография:</strong> Анимационные научные видео.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@DmitryPuchkov">
+<div class="card" data-country="ru">
+    <h2>Дмитрий Пучков</h2>
+    <p><strong>Контент:</strong> Обзоры</p>
+    <p><strong>Биография:</strong> Известный обозреватель.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@Varlamov">
+<div class="card" data-country="ru">
+    <h2>Илья Варламов</h2>
+    <p><strong>Контент:</strong> Путешествия</p>
+    <p><strong>Биография:</strong> Урбанист и блогер.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@Sobolev">
+<div class="card" data-country="ru">
+    <h2>Соболев</h2>
+    <p><strong>Контент:</strong> Реакции</p>
+    <p><strong>Биография:</strong> Популярный блогер.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@Guf">
+<div class="card" data-country="ru">
+    <h2>Guf</h2>
+    <p><strong>Контент:</strong> Музыка</p>
+    <p><strong>Биография:</strong> Рэпер и блогер.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@Khovansky">
+<div class="card" data-country="ru">
+    <h2>Юрий Хованский</h2>
+    <p><strong>Контент:</strong> Юмор</p>
+    <p><strong>Биография:</strong> Скандальный блогер.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@Ivangai">
+<div class="card" data-country="ru">
+    <h2>Ивангай Live</h2>
+    <p><strong>Контент:</strong> Стримы</p>
+    <p><strong>Биография:</strong> Стриминговый канал.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@BlackStar">
+<div class="card" data-country="ru">
+    <h2>Black Star</h2>
+    <p><strong>Контент:</strong> Музыка</p>
+    <p><strong>Биография:</strong> Музыкальный лейбл.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@Mellstroy">
+<div class="card" data-country="ru">
+    <h2>Mellstroy</h2>
+    <p><strong>Контент:</strong> Стримы</p>
+    <p><strong>Биография:</strong> Популярный стример.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@EdisonPts">
+<div class="card" data-country="ru">
+    <h2>EdisonPts</h2>
+    <p><strong>Контент:</strong> Minecraft</p>
+    <p><strong>Биография:</strong> Популярен среди школьников.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@Buster">
+<div class="card" data-country="ru">
+    <h2>Buster</h2>
+    <p><strong>Контент:</strong> Стримы</p>
+    <p><strong>Биография:</strong> Киберспортсмен.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@HardPlay">
+<div class="card" data-country="ru">
+    <h2>HardPlay</h2>
+    <p><strong>Контент:</strong> Игры</p>
+    <p><strong>Биография:</strong> Известный игровой канал.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@TheBrianMaps">
+<div class="card" data-country="ru">
+    <h2>TheBrianMaps</h2>
+    <p><strong>Контент:</strong> Юмор</p>
+    <p><strong>Биография:</strong> Популярный подростковый блогер.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@ItsMamix">
+<div class="card" data-country="ru">
+    <h2>ItsMamix</h2>
+    <p><strong>Контент:</strong> Эксперименты</p>
+    <p><strong>Биография:</strong> Необычные опыты.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@DanyaMilokhin">
+<div class="card" data-country="ru">
+    <h2>Даня Милохин</h2>
+    <p><strong>Контент:</strong> Лайфстайл</p>
+    <p><strong>Биография:</strong> Блогер и музыкант.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@KATYACLAP">
+<div class="card" data-country="ru">
+    <h2>Kate Clapp Live</h2>
+    <p><strong>Контент:</strong> Влоги</p>
+    <p><strong>Биография:</strong> Лайв-канал Кати Клэп.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@Jove">
+<div class="card" data-country="ru">
+    <h2>Jove</h2>
+    <p><strong>Контент:</strong> World of Tanks</p>
+    <p><strong>Биография:</strong> Популярен среди игроков.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@EgorKreed">
+<div class="card" data-country="ru">
+    <h2>Егор Крид</h2>
+    <p><strong>Контент:</strong> Музыка</p>
+    <p><strong>Биография:</strong> Известный певец.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@Winline">
+<div class="card" data-country="ru">
+    <h2>Winline</h2>
+    <p><strong>Контент:</strong> Спорт</p>
+    <p><strong>Биография:</strong> Спортивный канал.</p>
+</div>
+</a>
+<a href="https://www.youtube.com/@Kurzgesagt">
+<div class="card" data-country="us" data-genre="science">
+    <h2>Kurzgesagt</h2>
+    <p><strong>Контент:</strong> Наука, познание</p>
+    <p><strong>Биография:</strong> Анимационный научно-популярный канал.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@LinusTechTips">
+<div class="card" data-country="us" data-genre="tech">
+    <h2>Linus Tech Tips</h2>
+    <p><strong>Контент:</strong> Техника, обзоры</p>
+    <p><strong>Биография:</strong> Самый крупный техноканал.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@GamerNexus">
+<div class="card" data-country="us" data-genre="tech">
+    <h2>GamerNexus</h2>
+    <p><strong>Контент:</strong> Железо, обзоры</p>
+    <p><strong>Биография:</strong> Глубокие тесты компьютерных комплектующих.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@RyanHiga">
+<div class="card" data-country="us" data-genre="humor">
+    <h2>Ryan Higa</h2>
+    <p><strong>Контент:</strong> Юмор</p>
+    <p><strong>Биография:</strong> Один из самых ранних YouTube‑комиков.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@JackBlackOfficial">
+<div class="card" data-country="us" data-genre="humor">
+    <h2>Jack Black Official</h2>
+    <p><strong>Контент:</strong> Комедия</p>
+    <p><strong>Биография:</strong> Официальный канал актёра‑комика.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@DudePerfect">
+<div class="card" data-country="us" data-genre="experiments">
+    <h2>Dude Perfect</h2>
+    <p><strong>Контент:</strong> Спортивные трюки</p>
+    <p><strong>Биография:</strong> Команда, снимающая спортивные челленджи.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@FliteTest">
+<div class="card" data-country="us" data-genre="science">
+    <h2>Flite Test</h2>
+    <p><strong>Контент:</strong> Модели самолётов</p>
+    <p><strong>Биография:</strong> Всё о полётах и моделях‑самолётах.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@HowRidiculous">
+<div class="card" data-country="us" data-genre="experiments">
+    <h2>How Ridiculous</h2>
+    <p><strong>Контент:</strong> Эксперименты</p>
+    <p><strong>Биография:</strong> Большие эксперименты и разрушения.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@Veritasium">
+<div class="card" data-country="us" data-genre="science">
+    <h2>Veritasium</h2>
+    <p><strong>Контент:</strong> Наука</p>
+    <p><strong>Биография:</strong> Научно‑популярный канал о фактах и экспериментах.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@SmarterEveryDay">
+<div class="card" data-country="us" data-genre="science">
+    <h2>SmarterEveryDay</h2>
+    <p><strong>Контент:</strong> Научные видео</p>
+    <p><strong>Биография:</strong> Погружение в физику и технологии.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@FailArmy">
+<div class="card" data-country="us" data-genre="humor">
+    <h2>FailArmy</h2>
+    <p><strong>Контент:</strong> Приколы, фейлы</p>
+    <p><strong>Биография:</strong> Подборки самых смешных моментов.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@FirstWeFeast">
+<div class="card" data-country="us" data-genre="food">
+    <h2>First We Feast</h2>
+    <p><strong>Контент:</strong> Еда, интервью</p>
+    <p><strong>Биография:</strong> Кулинарные шоу и беседы с гостями.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@HotOnes">
+<div class="card" data-country="us" data-genre="food">
+    <h2>Hot Ones</h2>
+    <p><strong>Контент:</strong> Интервью, еда</p>
+    <p><strong>Биография:</strong> Гости отвечают на вопросы во время острого перца.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@BonAppetit">
+<div class="card" data-country="us" data-genre="food">
+    <h2>Bon Appétit</h2>
+    <p><strong>Контент:</strong> Готовка</p>
+    <p><strong>Биография:</strong> Кулинарный канал с рецептами.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@Tasty">
+<div class="card" data-country="us" data-genre="food">
+    <h2>Tasty</h2>
+    <p><strong>Контент:</strong> Рецепты</p>
+    <p><strong>Биография:</strong> Быстрые видео про еду.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@GoodMythicalMorning">
+<div class="card" data-country="us" data-genre="humor">
+    <h2>Good Mythical Morning</h2>
+    <p><strong>Контент:</strong> Утреннее шоу</p>
+    <p><strong>Биография:</strong> Комедийное ежедневное шоу.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@LizaKoshy">
+<div class="card" data-country="us" data-genre="humor">
+    <h2>Liza Koshy</h2>
+    <p><strong>Контент:</strong> Комедия</p>
+    <p><strong>Биография:</strong> Пародийные и юмористические видео.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@TroomTroom">
+<div class="card" data-country="us" data-genre="other">
+    <h2>Troom Troom</h2>
+    <p><strong>Контент:</strong> Лайфхаки</p>
+    <p><strong>Биография:</strong> Креативные DIY‑идеи.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@FBE">
+<div class="card" data-country="us" data-genre="humor">
+    <h2>FBE</h2>
+    <p><strong>Контент:</strong> Реакции</p>
+    <p><strong>Биография:</strong> Видео‑реакции на разные форматы.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@CinemaSins">
+<div class="card" data-country="us" data-genre="cinema">
+    <h2>CinemaSins</h2>
+    <p><strong>Контент:</strong> Кино</p>
+    <p><strong>Биография:</strong> Обзор ошибок в фильмах.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@ScreenJunkies">
+<div class="card" data-country="us" data-genre="cinema">
+    <h2>Screen Junkies</h2>
+    <p><strong>Контент:</strong> Фильмы</p>
+    <p><strong>Биография:</strong> Обзор кино‑новинок.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@TheTryGuys">
+<div class="card" data-country="us" data-genre="humor">
+    <h2>The Try Guys</h2>
+    <p><strong>Контент:</strong> Эксперименты, юмор</p>
+    <p><strong>Биография:</strong> Комедийно‑развлекательные испытания.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@BecauseScience">
+<div class="card" data-country="us" data-genre="science">
+    <h2>Because Science</h2>
+    <p><strong>Контент:</strong> Наука</p>
+    <p><strong>Биография:</strong> Разбор научных фактов.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@BingingWithBabish">
+<div class="card" data-country="us" data-genre="food">
+    <h2>Binging with Babish</h2>
+    <p><strong>Контент:</strong> Еда, готовка</p>
+    <p><strong>Биография:</strong> Кулинарные видео из фильмов и игр.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@MarkRober">
+<div class="card" data-country="us" data-genre="science">
+    <h2>Mark Rober</h2>
+    <p><strong>Контент:</strong> Наука, эксперименты</p>
+    <p><strong>Биография:</strong> Инженерные проекты и эксперименты.</p>
+</div>
+</a>
+<a href="https://www.youtube.com/@iJustine">
+<div class="card" data-country="us" data-genre="tech">
+    <h2>iJustine</h2>
+    <p><strong>Контент:</strong> Техника, влоги</p>
+    <p><strong>Биография:</strong> Обзоры гаджетов и лайфстайл.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@ColinFurze">
+<div class="card" data-country="us" data-genre="experiments">
+    <h2>Colin Furze</h2>
+    <p><strong>Контент:</strong> Изобретения, эксперименты</p>
+    <p><strong>Биография:</strong> Безумные инженерные проекты.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@SimoneGiertz">
+<div class="card" data-country="us" data-genre="experiments">
+    <h2>Simone Giertz</h2>
+    <p><strong>Контент:</strong> Роботы, DIY</p>
+    <p><strong>Биография:</strong> Королева неудачных роботов.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@PeterMcKinnon">
+<div class="card" data-country="us" data-genre="vlogs">
+    <h2>Peter McKinnon</h2>
+    <p><strong>Контент:</strong> Фото, видео, влоги</p>
+    <p><strong>Биография:</strong> Креативные ролики и советы фотографам.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@CaseyNeistatDaily">
+<div class="card" data-country="us" data-genre="vlogs">
+    <h2>Casey Neistat Daily</h2>
+    <p><strong>Контент:</strong> Ежедневные влоги</p>
+    <p><strong>Биография:</strong> Продолжение легендарного канала.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@MattDoesFitness">
+<div class="card" data-country="us" data-genre="fitness">
+    <h2>MattDoesFitness</h2>
+    <p><strong>Контент:</strong> Фитнес</p>
+    <p><strong>Биография:</strong> Тренировки и советы по здоровью.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@YogaWithAdriene">
+<div class="card" data-country="us" data-genre="fitness">
+    <h2>Yoga With Adriene</h2>
+    <p><strong>Контент:</strong> Йога</p>
+    <p><strong>Биография:</strong> Практика йоги для всех уровней.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@Seananners">
+<div class="card" data-country="us" data-genre="games">
+    <h2>Seananners</h2>
+    <p><strong>Контент:</strong> Игры, комедия</p>
+    <p><strong>Биография:</strong> Ветеран игровых видео.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@CaptainSparklez">
+<div class="card" data-country="us" data-genre="games">
+    <h2>CaptainSparklez</h2>
+    <p><strong>Контент:</strong> Minecraft</p>
+    <p><strong>Биография:</strong> Один из самых популярных Minecraft‑каналов.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@AnimationDomination">
+<div class="card" data-country="us" data-genre="entertainment">
+    <h2>Animation Domination</h2>
+    <p><strong>Контент:</strong> Анимация, развлечение</p>
+    <p><strong>Биография:</strong> Весёлые анимационные ролики.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@RocketJump">
+<div class="card" data-country="us" data-genre="entertainment">
+    <h2>RocketJump</h2>
+    <p><strong>Контент:</strong> Короткометражки</p>
+    <p><strong>Биография:</strong> Кино и экшен‑видео.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@NigaHiga">
+<div class="card" data-country="us" data-genre="humor">
+    <h2>NigaHiga</h2>
+    <p><strong>Контент:</strong> Юмор</p>
+    <p><strong>Биография:</strong> Классика YouTube‑комедии.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@DolanDark">
+<div class="card" data-country="us" data-genre="humor">
+    <h2>Dolan Dark</h2>
+    <p><strong>Контент:</strong> Мемы, юмор</p>
+    <p><strong>Биография:</strong> Легендарный мем‑контент.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@MaxMoeFoe">
+<div class="card" data-country="us" data-genre="humor">
+    <h2>MaxMoeFoe</h2>
+    <p><strong>Контент:</strong> Реакции, розыгрыши</p>
+    <p><strong>Биография:</strong> Юмор и социальные эксперименты.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@SketchShe">
+<div class="card" data-country="us" data-genre="humor">
+    <h2>SketchShe</h2>
+    <p><strong>Контент:</strong> Скетчи</p>
+    <p><strong>Биография:</strong> Комедийные зарисовки.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@SpongebobSquarePants">
+<div class="card" data-country="us" data-genre="entertainment">
+    <h2>SpongeBob SquarePants</h2>
+    <p><strong>Контент:</strong> Мультфильмы</p>
+    <p><strong>Биография:</strong> Официальный канал мультсериала.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@Disney">
+<div class="card" data-country="us" data-genre="entertainment">
+    <h2>Disney</h2>
+    <p><strong>Контент:</strong> Развлечения</p>
+    <p><strong>Биография:</strong> Официальный канал Disney.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@TheEllenShow">
+<div class="card" data-country="us" data-genre="talkshow">
+    <h2>The Ellen Show</h2>
+    <p><strong>Контент:</strong> Ток‑шоу</p>
+    <p><strong>Биография:</strong> Юмор и интервью знаменитостей.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@LastWeekTonight">
+<div class="card" data-country="us" data-genre="talkshow">
+    <h2>Last Week Tonight</h2>
+    <p><strong>Контент:</strong> Новости, юмор</p>
+    <p><strong>Биография:</strong> Сатирическое ток‑шоу.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@NPRMusic">
+<div class="card" data-country="us" data-genre="music">
+    <h2>NPR Music</h2>
+    <p><strong>Контент:</strong> Музыка</p>
+    <p><strong>Биография:</strong> Музыкальные сессии и интервью.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@TinyDeskConcerts">
+<div class="card" data-country="us" data-genre="music">
+    <h2>Tiny Desk Concerts</h2>
+    <p><strong>Контент:</strong> Музыка</p>
+    <p><strong>Биография:</strong> Живые выступления артистов NPR.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@Billboard">
+<div class="card" data-country="us" data-genre="music">
+    <h2>Billboard</h2>
+    <p><strong>Контент:</strong> Музыка</p>
+    <p><strong>Биография:</strong> Музыкальные чарты и интервью.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@TheSchoolOfLife">
+<div class="card" data-country="us" data-genre="education">
+    <h2>The School of Life</h2>
+    <p><strong>Контент:</strong> Психология, философия</p>
+    <p><strong>Биография:</strong> Видео про смысл жизни.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@CrashCourse">
+<div class="card" data-country="us" data-genre="education">
+    <h2>CrashCourse</h2>
+    <p><strong>Контент:</strong> Образование</p>
+    <p><strong>Биография:</strong> Быстрые образовательные курсы.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@CGPGrey">
+<div class="card" data-country="us" data-genre="education">
+    <h2>CGP Grey</h2>
+    <p><strong>Контент:</strong> Объяснялки</p>
+    <p><strong>Биография:</strong> Умные видео про мир.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@Numberphile">
+<div class="card" data-country="us" data-genre="science">
+    <h2>Numberphile</h2>
+    <p><strong>Контент:</strong> Математика</p>
+    <p><strong>Биография:</strong> Интересные факты про числа.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@Veritasium2">
+<div class="card" data-country="us" data-genre="science">
+    <h2>Veritasium 2</h2>
+    <p><strong>Контент:</strong> Наука</p>
+    <p><strong>Биография:</strong> Второй научный канал Veritasium.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@SciShow">
+<div class="card" data-country="us" data-genre="science">
+    <h2>SciShow</h2>
+    <p><strong>Контент:</strong> Наука</p>
+    <p><strong>Биография:</strong> Ежедневные научные видео.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@TechLinked">
+<div class="card" data-country="us" data-genre="tech">
+    <h2>TechLinked</h2>
+    <p><strong>Контент:</strong> Техника, новости</p>
+    <p><strong>Биография:</strong> Новостной техноканал.</p>
+</div>
+</a>
+
+<a href="https://www.youtube.com/@AndroidAuthority">
+<div class="card" data-country="us" data-genre="tech">
+    <h2>Android Authority</h2>
+    <p><strong>Контент:</strong> Техника</p>
+    <p><strong>Биография:</strong> Обзоры Android‑устройств.</p>
+</div>
+</a>
+<a href="https://www.youtube.com/@TSeries">
+<div class="card" data-country="us" data-genre="music">
+  <h2>T‑Series</h2>
+  <p><strong>Контент:</strong> Музыка</p>
+  <p><strong>Биография:</strong> Крупнейший музыкальный канал Индии.</p>
+</div></a>
+
+<a href="https://www.youtube.com/@SETIndia">
+<div class="card" data-country="us" data-genre="entertainment">
+  <h2>SET India</h2>
+  <p><strong>Контент:</strong> Шоу, сериалы</p>
+  <p><strong>Биография:</strong> Официальный канал Sony TV India.</p>
+</div></a>
+
+<a href="https://www.youtube.com/@WWE">
+<div class="card" data-country="us" data-genre="entertainment">
+  <h2>WWE</h2>
+  <p><strong>Контент:</strong> Спорт, развлечение</p>
+  <p><strong>Биография:</strong> Крупнейшая рестлинг‑лига.</p>
+</div></a>
+
+<a href="https://www.youtube.com/@5MinCraft">
+<div class="card" data-country="us" data-genre="other">
+  <h2>5‑Minute Crafts</h2>
+  <p><strong>Контент:</strong> Лайфхаки</p>
+  <p><strong>Биография:</strong> Популярный DIY‑канал.</p>
+</div></a>
+
+<a href="https://www.youtube.com/@MrSark">
+<div class="card" data-country="us" data-genre="games">
+  <h2>Mr Sark</h2>
+  <p><strong>Контент:</strong> Игры, логика</p>
+  <p><strong>Биография:</strong> Оригинальные игровые видео.</p>
+</div></a>
+
+<a href="https://www.youtube.com/@JonTronShow">
+<div class="card" data-country="us" data-genre="humor">
+  <h2>JonTron</h2>
+  <p><strong>Контент:</strong> Юмор, обзоры игр</p>
+  <p><strong>Биография:</strong> Комедийные игровые обзоры.</p>
+</div></a>
+
+<a href="https://www.youtube.com/@BraveWilderness">
+<div class="card" data-country="us" data-genre="science">
+  <h2>Brave Wilderness</h2>
+  <p><strong>Контент:</strong> Природа, животные</p>
+  <p><strong>Биография:</strong> Исследования дикой природы.</p>
+</div></a>
+
+<a href="https://www.youtube.com/@TheKingofRandom">
+<div class="card" data-country="us" data-genre="experiments">
+  <h2>The King of Random</h2>
+  <p><strong>Контент:</strong> Эксперименты</p>
+  <p><strong>Биография:</strong> Креативные опыты и DIY.</p>
+</div></a>
+
+<a href="https://www.youtube.com/@GoodMythicalMORE">
+<div class="card" data-country="us" data-genre="humor">
+  <h2>Good Mythical MORE</h2>
+  <p><strong>Контент:</strong> Юмор</p>
+  <p><strong>Биография:</strong> Дополнительный развлекательный контент GMM.</p>
+</div></a>
+
+<a href="https://www.youtube.com/@EpicMealTime">
+<div class="card" data-country="us" data-genre="food">
+  <h2>Epic Meal Time</h2>
+  <p><strong>Контент:</strong> Еда</p>
+  <p><strong>Биография:</strong> Самые большие и необычные блюда.</p>
+</div></a>
+
+<a href="https://www.youtube.com/@PrimitiveTechnology">
+<div class="card" data-country="us" data-genre="education">
+  <h2>Primitive Technology</h2>
+  <p><strong>Контент:</strong> Навыки, обучение</p>
+  <p><strong>Биография:</strong> Как делать инструменты с нуля.</p>
+</div></a>
+
+<a href="https://www.youtube.com/@CGPGrey">
+<div class="card" data-country="us" data-genre="education">
+  <h2>CGP Grey</h2>
+  <p><strong>Контент:</strong> Образование</p>
+  <p><strong>Биография:</strong> Поясняющее видео об обществе и мире.</p>
+</div></a>
+
+<a href="https://www.youtube.com/@NPRMusic">
+<div class="card" data-country="us" data-genre="music">
+  <h2>NPR Music</h2>
+  <p><strong>Контент:</strong> Музыка</p>
+  <p><strong>Биография:</strong> Живые сессии и интервью.</p>
+</div></a>
+
+<a href="https://www.youtube.com/@CrashCourse">
+<div class="card" data-country="us" data-genre="education">
+  <h2>CrashCourse</h2>
+  <p><strong>Контент:</strong> Образование</p>
+  <p><strong>Биография:</strong> Быстрые уроки по науке и истории.</p>
+</div></a>
+
+<a href="https://www.youtube.com/@Numberphile">
+<div class="card" data-country="us" data-genre="science">
+  <h2>Numberphile</h2>
+  <p><strong>Контент:</strong> Математика</p>
+  <p><strong>Биография:</strong> Забавные числа и факты.</p>
+</div></a>
+
+<a href="https://www.youtube.com/@mental_floss">
+<div class="card" data-country="us" data-genre="education">
+  <h2>mental_floss</h2>
+  <p><strong>Контент:</strong> Факты</p>
+  <p><strong>Биография:</strong> Удивительные и забавные знания.</p>
+</div></a>
+
+<a href="https://www.youtube.com/@BabishCooks">
+<div class="card" data-country="us" data-genre="food">
+  <h2>Babish Culinary Universe</h2>
+  <p><strong>Контент:</strong> Еда</p>
+  <p><strong>Биография:</strong> Приготовление блюд из фильмов и игр.</p>
+</div></a>
+
+<a href="https://www.youtube.com/@AdamSavageTested">
+<div class="card" data-country="us" data-genre="tech">
+  <h2>Adam Savage’s Tested</h2>
+  <p><strong>Контент:</strong> Техника</p>
+  <p><strong>Биография:</strong> Обзоры, инженерия, инструменты.</p>
+</div></a>
+
+<a href="https://www.youtube.com/@LinusTechTipsShorts">
+<div class="card" data-country="us" data-genre="tech">
+  <h2>Linus Tech Tips Shorts</h2>
+  <p><strong>Контент:</strong> Техника</p>
+  <p><strong>Биография:</strong> Короткие техно‑видео.</p>
+</div></a>
+
+<a href="https://www.youtube.com/@TechLinked">
+<div class="card" data-country="us" data-genre="tech">
+  <h2>TechLinked</h2>
+  <p><strong>Контент:</strong> Техника</p>
+  <p><strong>Биография:</strong> Новости техники и гаджетов.</p>
+</div></a>
+
+<a href="https://www.youtube.com/@Veritasium">
+<div class="card" data-country="us" data-genre="science">
+  <h2>Veritasium</h2>
+  <p><strong>Контент:</strong> Наука</p>
+  <p><strong>Биография:</strong> Пояснение научных явлений.</p>
+</div></a>
+
+<a href="https://www.youtube.com/@SmarterEveryDay">
+<div class="card" data-country="us" data-genre="science">
+  <h2>SmarterEveryDay</h2>
+  <p><strong>Контент:</strong> Наука</p>
+  <p><strong>Биография:</strong> Погружение в физику и технику.</p>
+</div></a>
+
+<a href="https://www.youtube.com/@FliteTest">
+<div class="card" data-country="us" data-genre="science">
+  <h2>Flite Test</h2>
+  <p><strong>Контент:</strong> Авиация</p>
+  <p><strong>Биография:</strong> Создание и тесты самолётов.</p>
+</div></a>
+
+<a href="https://www.youtube.com/@Smosh">
+<div class="card" data-country="us" data-genre="humor">
+  <h2>Smosh</h2>
+  <p><strong>Контент:</strong> Юмор</p>
+  <p><strong>Биография:</strong> Классический комедийный канал.</p>
+</div></a>
+
+
+<a href="https://www.youtube.com/@Ridddle">
+<div class="card" data-country="us" data-genre="humor">
+  <h2>Ridddle</h2>
+  <p><strong>Контент:</strong> Мемы, юмор</p>
+  <p><strong>Биография:</strong> Весёлые и странные видео.</p>
+</div></a>
+
+
+<a href="https://www.youtube.com/@TeamFourStar">
+<div class="card" data-country="us" data-genre="entertainment">
+  <h2>Team Four Star</h2>
+  <p><strong>Контент:</strong> Анимация</p>
+  <p><strong>Биография:</strong> Parody и анимационные серии.</p>
+</div></a>
+   
+
+<a href="https://www.youtube.com/@TheFineBros">
+<div class="card" data-country="us" data-genre="humor">
+  <h2>The Fine Bros</h2>
+  <p><strong>Контент:</strong> Реакции</p>
+  <p><strong>Биография:</strong> Пионеры реакционного контента.</p>
+</div></a>
+
+
+</main>
+
+<footer>
+    © 2025 Сайт про ютуберов
+</footer>
+
+<script src="./Мир YouTube_files/script.js"></script>
+
+
+</body></html>
